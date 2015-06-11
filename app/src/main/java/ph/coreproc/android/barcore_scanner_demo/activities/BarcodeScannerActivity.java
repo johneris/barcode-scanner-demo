@@ -1,9 +1,16 @@
 package ph.coreproc.android.barcore_scanner_demo.activities;
 
+import android.content.res.AssetFileDescriptor;
+import android.media.MediaPlayer;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.TextView;
 
 import com.google.zxing.Result;
+
+import java.io.IOException;
 
 import butterknife.InjectView;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -56,6 +63,8 @@ public class BarcodeScannerActivity extends BaseActivity implements ZXingScanner
 
     @Override
     public void handleResult(Result rawResult) {
+        beep();
+
         String barcodeFormat = rawResult.getBarcodeFormat().toString();
         String barcodeValue = rawResult.getText();
 
@@ -65,6 +74,18 @@ public class BarcodeScannerActivity extends BaseActivity implements ZXingScanner
         UiUtil.showMessageDialog(getSupportFragmentManager(), barcodeFormat, barcodeValue);
 
         scannerView.startCamera();
+    }
+
+    private void beep() {
+        try {
+            AssetFileDescriptor afd = getAssets().openFd("beep.mp3");
+            MediaPlayer player = new MediaPlayer();
+            player.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
+            player.prepare();
+            player.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
