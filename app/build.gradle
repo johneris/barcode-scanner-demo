@@ -54,4 +54,8 @@ dependencies {
 
     // Picasso - image downloading and caching library for Android
     compile 'com.squareup.picasso:picasso:2.5.2'
+
+    // ZBar
+    compile 'me.dm7.barcodescanner:zxing:1.7.2'
+    compile 'me.dm7.barcodescanner:zbar:1.7.2'
 }

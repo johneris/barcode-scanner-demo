@@ -1,4 +1,4 @@
-package ph.coreproc.android.kitchenmaterial;
+package ph.coreproc.android.barcore_scanner_demo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

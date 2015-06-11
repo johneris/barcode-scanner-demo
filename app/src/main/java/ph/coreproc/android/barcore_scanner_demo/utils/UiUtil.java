@@ -1,10 +1,10 @@
-package ph.coreproc.android.kitchenmaterial.utils;
+package ph.coreproc.android.barcore_scanner_demo.utils;
 
 import android.content.Context;
 import android.support.v4.app.FragmentManager;
 import android.widget.Toast;
 
-import ph.coreproc.android.kitchenmaterial.dialogs.MessageDialogFragment;
+import ph.coreproc.android.barcore_scanner_demo.dialogs.MessageDialogFragment;
 
 /**
  * UiUtil is a collection of static methods that

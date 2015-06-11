@@ -1,11 +1,10 @@
-package ph.coreproc.android.kitchenmaterial.rest;
+package ph.coreproc.android.barcore_scanner_demo.rest;
 
 import java.util.List;
 
-import ph.coreproc.android.kitchenmaterial.models.Contributor;
+import ph.coreproc.android.barcore_scanner_demo.models.Contributor;
 import retrofit.Callback;
 import retrofit.http.GET;
-import retrofit.http.PUT;
 import retrofit.http.Path;
 
 /**

@@ -1,4 +1,4 @@
-package ph.coreproc.android.kitchenmaterial.adapters;
+package ph.coreproc.android.barcore_scanner_demo.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -14,8 +14,8 @@ import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import ph.coreproc.android.kitchenmaterial.R;
-import ph.coreproc.android.kitchenmaterial.models.Contributor;
+import ph.coreproc.android.barcore_scanner_demo.R;
+import ph.coreproc.android.barcore_scanner_demo.models.Contributor;
 
 /**
  * Created by johneris on 6/8/2015.

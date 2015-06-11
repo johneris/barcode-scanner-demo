@@ -1,4 +1,4 @@
-package ph.coreproc.android.kitchenmaterial.utils;
+package ph.coreproc.android.barcore_scanner_demo.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

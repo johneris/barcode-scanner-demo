@@ -1,13 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ph.coreproc.android.kitchenmaterial">
+    package="ph.coreproc.android.barcore_scanner_demo">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name=".App"
+        android:name="ph.coreproc.android.barcore_scanner_demo.App"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -26,7 +27,7 @@
         <!--ActiveAndroid-->
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name="ph.coreproc.android.barcore_scanner_demo.activities.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -36,9 +37,9 @@
         </activity>
 
         <activity
-            android:name=".activities.ExampleActivity"
+            android:name=".activities.BarcodeScannerActivity"
             android:label="@string/activity_title_example"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="landscape"></activity>
 
     </application>
 
